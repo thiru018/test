@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  font-family: "Ruda", sans-serif;
+  background-color: black;
+}
+header {
+  padding: 1rem 3rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul li {
+  cursor: pointer;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+header .social ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0rem;
+  letter-spacing: 0.10875rem;
+  display: flex;
+  place-items: center;
+}
+.hero {
+  position: relative;
+}
+.hero p {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.14063rem;
+}
+.hero-text {
+  position: absolute;
+  max-width: 800px;
+  padding: 3rem;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 6.3125rem;
+  font-family: Quattrocento;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.78125rem;
+  letter-spacing: 0.56813rem;
+}
+.hero img {
+  opacity: 0.8;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 3rem;
+}
+.about-underline {
+  width: 75%;
+  height: 5px;
+  margin-bottom: 30px;
+  background-color: red;
+}
+.about-text {
+  font-size: 1.5625rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.14063rem;
+  color: white;
+}
+.menu-grid {
+  padding: 3rem;
+  margin: 0 auto;
+}
+#menu .menu-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu-item img {
+  width: 250px; /* Adjust the width to your desired fixed size */
+  height: 200px; /* Adjust the height to your desired fixed size */
+  object-fit: cover; /* Preserve aspect ratio */
+}
+.menu-item {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.menu-item .info {
+  max-width: 300px;
+  line-height: 2.5rem;
+  letter-spacing: 0.1125rem;
+  color: #fff;
+}
+#menu .menu-item h3 {
+  color: #f2c94c;
+  font-size: 1.75rem;
+}
+.para {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.5625rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.14063rem;
+}
+.carousel img {
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+}
+#find-us {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  margin-bottom: 5rem;
+}
+.gallery-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.gallery-container div:first-child {
+  grid-column: 1 /4;
+  grid-row: 1/4;
+  border: 2px solid white;
+}
+.gallery-container div:nth-child(4) {
+  grid-column: 4/5;
+  grid-row: 2/4;
+}
+.gallery-container img {
+  object-fit: cover;
+}
+.gallery-container div {
+  height: 100%;
+  align-self: center;
+}
+#find-us h2,
+#gallery h2,
+h2 {
+  font-family: Quattrocento;
+  line-height: 0rem;
+  font-size: 3.75rem;
+  text-align: center;
+  line-height: 0.5rem;
+  color: white;
+  padding: 2rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+#find-us .underline,
+#gallery .underline,
+.underline {
+  background-color: red;
+  width: 20%;
+  margin: 1rem auto 5rem auto;
+  height: 0.6rem;
+}
+.find-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.address-main {
+  font-size: 1.5625rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.14063rem;
+}
+.address-p {
+  font-size: 1.25rem;
+  font-family: "Ruda";
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.1125rem;
+}
+footer {
+  padding: 3rem 5rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .contact-details {
+  color: white;
+}
+footer .contact-details .mail {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 0;
+}
+footer .contact-details .phone p:first-child {
+  margin-bottom: 0.5rem;
+}
